@@ -1,6 +1,6 @@
 {
   "name": "angular-dragula",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -8,8 +8,8 @@
     "bower_components",
     "test",
     "tests",
-    "dev",
-    "src"
+    "/dev",
+    "/src"
   ],
   "dependencies": {
     "angular": "~1.3.15",
