@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <link rel="stylesheet" type="text/css" href="../src/lib/dragula.js/dist/dragula.css"></link>
+  <link rel="stylesheet" type="text/css" href="../src/lib/dragula.js/example/example.css"></link>
+  <title></title>
+</head>
+<body ng-controller="AppCtrl">
+
+    <div ng-dragula config="config" class='wrapper'>
+      <div id='left1' class='container'>
+        <div>Move me, but you can only drop me in one of these containers.</div>
+        <div>If you try to drop me somewhere other than these containers, I'll just come back.</div>
+        <div>Item 3.</div>
+        <div>Item 6.</div>
+      </div>
+      <div id='right1' class='container'>
+        <div>You can drop me in the left container, otherwise I'll stay here.</div>
+        <div>Item 4.</div>
+        <div>Item 5.</div>
+      </div>
+    </div>
+
+<script src="../src/lib/angular/angular.js"></script>
+<script src="../dist/angular-dragula.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
