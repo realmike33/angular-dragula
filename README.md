@@ -1,6 +1,6 @@
 # angular-dragula
 
-Built using Dragula
+Built using [Dragula](https://github.com/bevacqua/dragula)
 
 # Dependencies
 
@@ -8,9 +8,9 @@ Built using Dragula
 
 # Features
 
-- Easy to get started
+- Easy to get [started](https://github.com/realmike33/angular-dragula#usage)
 - Comes with dragula
-- Gives you full flexibility as dragula
+- Gives you full flexibility as the dragula library allows
 
 # Install
 
@@ -52,6 +52,13 @@ angular.module('app', ['angular-dragula'])
 .controller('AppCtrl', function($scope, ngDragulaFactory){
 ngDragulaFactory.get('main').then(function(dragula){
   console.log(dragula);
+  dragula
+    .on('drag', function(el){
+      ...
+    })
+    .on('drop', function(el){
+      ...
+    });
 });
 ```
 
