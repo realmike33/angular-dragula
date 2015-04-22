@@ -9,5 +9,5 @@ angular.module('app', ['angular-dragula'])
   ngDragulaFactory.get('test').then(function(stuff){
     console.log(stuff);
   });
-
+  console.log(dragula(elements));
 })

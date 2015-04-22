@@ -707,8 +707,7 @@ module.exports = {
         },
         link: function(scope, element, attrs){
           var drag = scope.config;
-          ngDragulaFactory[drag.name] = drag;
-          dragula(drag.elements, drag);
+          ngDragulaFactory[drag.name] = dragula(drag.elements, drag);
         }
       }
     }]);
