@@ -6,5 +6,8 @@ angular.module('app', ['angular-dragula'])
     name: 'test',
     elements: elements
   };
-  $timeout(function(){console.log(ngDragulaFactory)}, 500);
+  ngDragulaFactory.get('test').then(function(stuff){
+    console.log(stuff);
+  });
+
 })
