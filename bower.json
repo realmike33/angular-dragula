@@ -11,6 +11,7 @@
     "/dev",
     "/src"
   ],
+  "main": ["./dist/angular-dragula.js"],
   "dependencies": {
     "angular": "~1.3.15",
     "dragula.js": "~1.5.0"
